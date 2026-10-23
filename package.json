@@ -1,18 +1,23 @@
 {
   "name": "nr-arfcn",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Convert between 5G NR-ARFCN and Frequency (MHz), and look up NR operating bands, per 3GPP TS 38.104.",
   "keywords": ["5g", "nr", "arfcn", "nr-arfcn", "3gpp", "38.104", "frequency", "raster"],
   "license": "MIT",
-  "author": "João Victor",
+  "author": {
+    "name": "João Victor",
+    "url": "https://mjoaovictor.dev"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mjoaovictor/nr-arfcn.git"
   },
-  "homepage": "https://github.com/mjoaovictor/nr-arfcn#readme",
+  "homepage": "https://mjoaovictor.dev/tools/5g-nr-arfcn-calculator",
   "bugs": "https://github.com/mjoaovictor/nr-arfcn/issues",
   "type": "module",
   "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
