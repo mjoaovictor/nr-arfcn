@@ -1,4 +1,4 @@
-/** `[first, step, last]` NR-ARFCN range, as written in TS 38.104 (First – <Step size> – Last). */
+/** `[first, step, last]` NR-ARFCN range, as written in TS 38.104 (First – <step size> – Last). */
 export type ArfcnRange = readonly [first: number, step: number, last: number]
 
 export type DuplexMode = "FDD" | "TDD" | "SDL" | "SUL"
@@ -8,6 +8,7 @@ export interface ChannelRaster {
   duplexMode: DuplexMode
   /** ΔFRaster. Absent for n263, whose raster is defined per channel bandwidth instead. */
   rasterKhz?: number
+  /** Set only for n263 (Table 5.4.2.3-3), where it replaces `rasterKhz`. */
   channelBandwidthMhz?: number
   uplink?: ArfcnRange
   downlink?: ArfcnRange

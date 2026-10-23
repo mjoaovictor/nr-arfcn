@@ -14,7 +14,6 @@ export interface BandMatch {
   onRaster: boolean
 }
 
-/** Every operating band channel raster (TS 38.104 clause 5.4.2.3) whose UL or DL range contains the NR-ARFCN. */
 export function findBands(arfcn: number): BandMatch[] {
   assertArfcn(arfcn)
 
