@@ -2,6 +2,8 @@
 
 Convert between 5G NR-ARFCN and Frequency (MHz), and find which NR operating bands an NR-ARFCN belongs to. Based on 3GPP TS 38.104 V20.1.0 (Release 20). Pure TypeScript with no runtime dependencies.
 
+[Try it online](https://mjoaovictor.dev/tools/5g-nr-arfcn-calculator)
+
 ```sh
 npm install nr-arfcn
 ```
@@ -46,6 +48,7 @@ Invalid input throws a `RangeError`: a non-integer NR-ARFCN, or a value outside 
 
 - The 10 kHz enhanced channel raster (Table 5.4.2.3-4)
 - Per-bandwidth NR-ARFCN lists for n46, n96 and n102 (notes 1–3 of Table 5.4.2.3-1). These bands are matched on their full table range instead.
+- The 3 MHz channel bandwidth restriction for n106 (note 5 of Table 5.4.2.3-1: only NR-ARFCN 179800 and 187600 apply). n106 is matched on its full table range.
 - The 7.5 kHz uplink shift (F<sub>REF,shift</sub>)
 - The synchronization raster (GSCN)
 
